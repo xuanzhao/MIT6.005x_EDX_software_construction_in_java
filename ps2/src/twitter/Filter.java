@@ -1,5 +1,7 @@
 package twitter;
 
+import java.time.Instant;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -24,7 +26,24 @@ public class Filter {
      *         in the same order as in the input list.
      */
     public static List<Tweet> writtenBy(List<Tweet> tweets, String username) {
-        throw new RuntimeException("not implemented");
+        List<Tweet> ts = new LinkedList<>();
+        if (username.contains(".")) {
+            return ts;
+        }
+        if (! username.matches("[\\w_-]+")) {
+            return ts;
+        }
+
+        for (Tweet t : tweets) {
+            String author = t.getAuthor();
+            if (author.toLowerCase().equals(username.toLowerCase())) {
+                ts.add(t);
+            }
+        }
+        return ts;
+
+//        throw new RuntimeException("not implemented");
+
     }
 
     /**
@@ -38,7 +57,22 @@ public class Filter {
      *         in the same order as in the input list.
      */
     public static List<Tweet> inTimespan(List<Tweet> tweets, Timespan timespan) {
-        throw new RuntimeException("not implemented");
+        List<Tweet> ts = new LinkedList<>();
+        Instant startTime = timespan.getStart();
+        Instant endTime = timespan.getEnd();
+        if (startTime.equals(endTime)) {
+            return ts;
+        }
+
+        for (Tweet t : tweets) {
+            Instant timestamp = t.getTimestamp();
+            if ((timestamp.equals(startTime) | timestamp.isAfter(startTime)) &
+                    (timestamp.equals(endTime) | timestamp.isBefore(endTime))) {
+                ts.add(t);
+            }
+        }
+        return ts;
+//        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -57,7 +91,24 @@ public class Filter {
      *         same order as in the input list.
      */
     public static List<Tweet> containing(List<Tweet> tweets, List<String> words) {
-        throw new RuntimeException("not implemented");
+        List<Tweet> ts = new LinkedList<>();
+        if (words.isEmpty()) {
+            return ts;
+        }
+
+        for (Tweet t : tweets) {
+            String text = t.getText().toLowerCase();
+            if (text.isEmpty()) break;
+            for (String word : words) {
+                if (!word.equals(" ") & !word.equals("") & text.contains(word.toLowerCase())) {
+                    ts.add(t);
+                    break;
+                }
+            }
+        }
+
+        return ts;
+//        throw new RuntimeException("not implemented");
     }
 
     /* Copyright (c) 2007-2016 MIT 6.005 course staff, all rights reserved.

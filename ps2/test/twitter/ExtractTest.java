@@ -38,9 +38,10 @@ public class ExtractTest {
     private static final Tweet tweet1 = new Tweet(1, "alyssa", "is it reasonable to talk about rivest so much?", d1);
     private static final Tweet tweet2 = new Tweet(2, "bbitdiddle", "rivest talk in 30 minutes #hype", d2);
     private static final Tweet tweet3 = new Tweet(3, "ken", "this is tweet 3 message@ken", d3);
-    private static final Tweet tweet4 = new Tweet(3, "ken", "this is tweet 4 message@ken@91akihiko", d3);
+    private static final Tweet tweet4 = new Tweet(3, "ken", "this is tweet 4 message@ken@91-akihiko", d3);
 
     private static final Tweet tweet5 = new Tweet(3, "ken", "this is tweet 5 message@ken.waseda.jp", d3);
+    private static final Tweet tweet6 = new Tweet(3, "ken", "this is tweet 5 message@ken@KEN", d3);
 
 
     @Test(expected = AssertionError.class)
@@ -98,16 +99,21 @@ public class ExtractTest {
     public void testGetMentionedUsersMultiLegalMention() {
         Set<String> mentionedUsers = Extract.getMentionedUsers(Arrays.asList(tweet1, tweet2, tweet3, tweet4));
 
-        assertEquals("expected set", makeSet("ken", "91akihiko"), mentionedUsers);
+        assertEquals("expected set", makeSet("ken", "91-akihiko"), mentionedUsers);
     }
 
     @Test
     public void testGetMentionedUsersIncludeIllegalMention() {
         Set<String> mentionedUsers = Extract.getMentionedUsers(Arrays.asList(tweet1, tweet2, tweet3, tweet4, tweet5));
 
-        assertEquals("expected set", makeSet("ken", "91akihiko"), mentionedUsers);
+        assertEquals("expected set", makeSet("ken", "91-akihiko"), mentionedUsers);
     }
 
+    @Test
+    public void testGetMentionedUsersCaseInsensiveMention() {
+        Set<String> mentionedUsers = Extract.getMentionedUsers(Arrays.asList(tweet1, tweet3, tweet6));
+        assertEquals("expected set", makeSet("ken"), mentionedUsers);
+    }
 
     private static Set<String> makeSet(String... elements) {
         Set<String> set = new HashSet<>();

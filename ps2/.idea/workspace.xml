@@ -16,8 +16,8 @@
       <file leaf-file-name="Extract.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/twitter/Extract.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
-              <caret line="98" column="47" lean-forward="true" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
+            <state relative-caret-position="697">
+              <caret line="134" column="32" lean-forward="false" selection-start-line="134" selection-start-column="32" selection-end-line="134" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -28,9 +28,11 @@
       <file leaf-file-name="Filter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/twitter/Filter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="535">
+              <caret line="102" column="40" lean-forward="false" selection-start-line="102" selection-start-column="40" selection-end-line="102" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,7 +52,7 @@
       <file leaf-file-name="Timespan.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/twitter/Timespan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
+            <state relative-caret-position="162">
               <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding>
                 <element signature="e#876#877#0" expanded="true" />
@@ -60,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tweet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tweet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/twitter/Tweet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
+            <state relative-caret-position="-95">
               <caret line="62" column="18" lean-forward="false" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
               <folding>
                 <element signature="e#1768#1769#0" expanded="true" />
@@ -88,8 +90,8 @@
       <file leaf-file-name="ExtractTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/twitter/ExtractTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="42" column="105" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="105" />
+            <state relative-caret-position="1475">
+              <caret line="101" column="56" lean-forward="false" selection-start-line="101" selection-start-column="56" selection-end-line="101" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,26 +99,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilterTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FilterTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/twitter/FilterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+            <state relative-caret-position="2484">
+              <caret line="140" column="9" lean-forward="true" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SocialNetworkTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/twitter/SocialNetworkTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="31" column="9" lean-forward="false" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-              <folding>
-                <element signature="e#443#444#0" expanded="false" />
-                <element signature="e#529#530#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -132,16 +121,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/twitter/ExtractTest.java" />
-        <option value="$PROJECT_DIR$/src/twitter/Extract.java" />
         <option value="$PROJECT_DIR$/src/twitter/Tweet.java" />
+        <option value="$PROJECT_DIR$/src/twitter/Extract.java" />
+        <option value="$PROJECT_DIR$/src/twitter/Filter.java" />
+        <option value="$PROJECT_DIR$/test/twitter/ExtractTest.java" />
+        <option value="$PROJECT_DIR$/test/twitter/FilterTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1927" />
-    <option name="width" value="1918" />
-    <option name="height" value="1040" />
+    <option name="x" value="-1928" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -213,6 +205,9 @@
       <pane id="Scratches" />
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/我的文档/Downloads/MIT6.005_software_construction_in_java/ps2/src/twitter/Filter.java&#10;line 20&#9;PSI&#9;JAVA://javafx.scene.shape.Line&#10;:20&#9;null&#9;null&#10;F&#9;FILE&#9;file://D:/我的文档/Downloads/MIT6.005_software_construction_in_java/ps2/src/twitter/Filter.java&#10;f&#9;FILE&#9;file://D:/我的文档/Downloads/MIT6.005_software_construction_in_java/ps2/test/twitter/FilterTest.java&#10;Fil&#9;FILE&#9;file://D:/我的文档/Downloads/MIT6.005_software_construction_in_java/ps2/test/twitter/FilterTest.java" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -225,8 +220,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Extract">
-    <configuration default="false" name="ExtractTest.testGetTimespanTwoTweets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FilterTest.testContainingIncludeIllegalWord">
+    <configuration default="false" name="FilterTest.testContainingIllegalWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="twitter.*" />
@@ -237,8 +232,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="twitter" />
-      <option name="MAIN_CLASS_NAME" value="twitter.ExtractTest" />
-      <option name="METHOD_NAME" value="testGetTimespanTwoTweets" />
+      <option name="MAIN_CLASS_NAME" value="twitter.FilterTest" />
+      <option name="METHOD_NAME" value="testContainingIllegalWord" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -272,7 +267,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="ExtractTest.testGetTimespanOneTweets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ExtractTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="twitter.*" />
@@ -284,7 +279,33 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="twitter" />
       <option name="MAIN_CLASS_NAME" value="twitter.ExtractTest" />
-      <option name="METHOD_NAME" value="testGetTimespanOneTweets" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ExtractTest.testGetMentionedUsersMultiLegalMention" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="twitter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ps2-tweets" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="twitter" />
+      <option name="MAIN_CLASS_NAME" value="twitter.ExtractTest" />
+      <option name="METHOD_NAME" value="testGetMentionedUsersMultiLegalMention" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -298,7 +319,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ExtractTest.testGetTimespanThreeTweets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="FilterTest.testContainingIncludeIllegalWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="twitter.*" />
@@ -309,8 +330,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="twitter" />
-      <option name="MAIN_CLASS_NAME" value="twitter.ExtractTest" />
-      <option name="METHOD_NAME" value="testGetTimespanThreeTweets" />
+      <option name="MAIN_CLASS_NAME" value="twitter.FilterTest" />
+      <option name="METHOD_NAME" value="testContainingIncludeIllegalWord" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -585,18 +606,20 @@
       <envs />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ExtractTest.testGetTimespanTwoTweets" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.FilterTest.testContainingIllegalWord" />
       <item index="1" class="java.lang.String" itemvalue="Application.Extract" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ExtractTest.testGetTimespanOneTweets" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ExtractTest.testGetTimespanThreeTweets" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ExtractTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ExtractTest.testGetMentionedUsersMultiLegalMention" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FilterTest.testContainingIncludeIllegalWord" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.Extract" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ExtractTest.testGetTimespanThreeTweets" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ExtractTest.testGetTimespanOneTweets" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ExtractTest.testGetTimespanTwoTweets" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FilterTest.testContainingIncludeIllegalWord" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ExtractTest.testGetMentionedUsersMultiLegalMention" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FilterTest.testContainingIllegalWord" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ExtractTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Extract" />
       </list>
     </recent_temporary>
   </component>
@@ -607,6 +630,9 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -619,42 +645,58 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ExtractTest_testGetTimespanOneTweets - 2017.10.06 at 19h 38m 49s.xml">
-      <configuration name="ExtractTest.testGetTimespanOneTweets" configurationId="JUnit" />
+    <history-entry file="ExtractTest - 2017.10.07 at 19h 08m 06s.xml">
+      <configuration name="ExtractTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExtractTest_testGetTimespanThreeTweets - 2017.10.06 at 19h 38m 54s.xml">
-      <configuration name="ExtractTest.testGetTimespanThreeTweets" configurationId="JUnit" />
+    <history-entry file="ExtractTest_testGetMentionedUsersMultiLegalMention - 2017.10.07 at 19h 08m 38s.xml">
+      <configuration name="ExtractTest.testGetMentionedUsersMultiLegalMention" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExtractTest_testGetTimespanThreeTweets - 2017.10.06 at 19h 44m 36s.xml">
-      <configuration name="ExtractTest.testGetTimespanThreeTweets" configurationId="JUnit" />
+    <history-entry file="ExtractTest_testGetMentionedUsersMultiLegalMention - 2017.10.07 at 19h 08m 50s.xml">
+      <configuration name="ExtractTest.testGetMentionedUsersMultiLegalMention" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExtractTest_testGetTimespanTwoTweets - 2017.10.06 at 18h 14m 39s.xml">
-      <configuration name="ExtractTest.testGetTimespanTwoTweets" configurationId="JUnit" />
+    <history-entry file="FilterTest - 2017.10.07 at 19h 05m 08s.xml">
+      <configuration name="FilterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExtractTest_testGetTimespanTwoTweets - 2017.10.06 at 19h 38m 44s.xml">
-      <configuration name="ExtractTest.testGetTimespanTwoTweets" configurationId="JUnit" />
+    <history-entry file="FilterTest_testContainingIllegalWord - 2017.10.07 at 19h 05m 16s.xml">
+      <configuration name="FilterTest.testContainingIllegalWord" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FilterTest_testContainingIllegalWord - 2017.10.07 at 19h 05m 41s.xml">
+      <configuration name="FilterTest.testContainingIllegalWord" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FilterTest_testContainingIllegalWord - 2017.10.07 at 19h 05m 52s.xml">
+      <configuration name="FilterTest.testContainingIllegalWord" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FilterTest_testContainingIllegalWord - 2017.10.07 at 19h 07m 03s.xml">
+      <configuration name="FilterTest.testContainingIllegalWord" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FilterTest_testContainingIllegalWord - 2017.10.07 at 19h 08m 21s.xml">
+      <configuration name="FilterTest.testContainingIllegalWord" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FilterTest_testContainingIncludeIllegalWord - 2017.10.07 at 19h 09m 46s.xml">
+      <configuration name="FilterTest.testContainingIncludeIllegalWord" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1927" y="0" width="1918" height="1040" extended-state="0" />
+    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36677453" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36324787" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2588997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25641027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -674,7 +716,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -696,7 +740,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -779,7 +825,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -828,14 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/twitter/Filter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/twitter/SocialNetwork.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
@@ -854,9 +894,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/twitter/Tweet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="62" column="18" lean-forward="false" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+          <folding>
+            <element signature="e#1768#1769#0" expanded="true" />
+            <element signature="e#1795#1796#0" expanded="true" />
+            <element signature="e#1898#1899#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/twitter/Timespan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
+        <state relative-caret-position="162">
           <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding>
             <element signature="e#876#877#0" expanded="true" />
@@ -865,10 +918,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/twitter/FilterTest.java">
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_131/javafx-src.zip!/javafx/scene/shape/Line.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        <state relative-caret-position="301">
+          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/regex/Matcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="495" column="0" lean-forward="false" selection-start-line="495" selection-start-column="0" selection-end-line="495" selection-end-column="0" />
+          <folding>
+            <element signature="e#17097#17098#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/twitter/Extract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="134" column="32" lean-forward="false" selection-start-line="134" selection-start-column="32" selection-end-line="134" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/twitter/Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="102" column="40" lean-forward="false" selection-start-line="102" selection-start-column="40" selection-end-line="102" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -877,33 +958,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/twitter/ExtractTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="42" column="105" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="105" />
+        <state relative-caret-position="1475">
+          <caret line="101" column="56" lean-forward="false" selection-start-line="101" selection-start-column="56" selection-end-line="101" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/twitter/Extract.java">
+    <entry file="file://$PROJECT_DIR$/test/twitter/FilterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="98" column="47" lean-forward="true" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
+        <state relative-caret-position="2484">
+          <caret line="140" column="9" lean-forward="true" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/twitter/Tweet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="62" column="18" lean-forward="false" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-          <folding>
-            <element signature="e#1768#1769#0" expanded="true" />
-            <element signature="e#1795#1796#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1930#1931#0" expanded="true" />
           </folding>
         </state>
       </provider>
