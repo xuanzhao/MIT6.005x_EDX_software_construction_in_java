@@ -70,7 +70,7 @@ public class Extract {
                 if (!result.contains(".")) {
                     for (String s : result.split("@")) {
                         if (! mentionedUsers.contains(s.toLowerCase()))
-                            mentionedUsers.add(s);
+                            mentionedUsers.add(s.toLowerCase());
                     }
                 }
             }

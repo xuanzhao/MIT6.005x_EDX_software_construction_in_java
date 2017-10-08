@@ -1,8 +1,6 @@
 package twitter;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * SocialNetwork provides methods that operate on a social network.
@@ -38,7 +36,26 @@ public class SocialNetwork {
      *         either authors or @-mentions in the list of tweets.
      */
     public static Map<String, Set<String>> guessFollowsGraph(List<Tweet> tweets) {
-        throw new RuntimeException("not implemented");
+        Map<String, Set<String>> followsGraph = new HashMap<>();
+
+        for (Tweet t : tweets) {
+            String author = t.getAuthor().toLowerCase();
+            Set<String> mentionedUsers = Extract.getMentionedUsers(Arrays.asList(t));
+            if (followsGraph.containsKey(author)) {
+                Set<String> currentMentionedUsers = followsGraph.get(author);
+                mentionedUsers.addAll(currentMentionedUsers);
+                followsGraph.put(author, mentionedUsers);
+            } else {
+                followsGraph.put(author, mentionedUsers);
+            }
+        }
+
+        return followsGraph;
+//        throw new RuntimeException("not implemented");
+    }
+
+    public static int isUsernameExist(String username1, String username2) {
+        return username1.compareToIgnoreCase(username2);
     }
 
     /**
@@ -51,7 +68,40 @@ public class SocialNetwork {
      *         descending order of follower count.
      */
     public static List<String> influencers(Map<String, Set<String>> followsGraph) {
-        throw new RuntimeException("not implemented");
+        Comparator valueComparator = new Comparator<Map.Entry<String, Integer>>() {
+            @Override
+            public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
+                return o2.getValue() - o1.getValue();
+            }
+        };
+
+        Map<String, Integer> influencersCounter = new TreeMap<>();
+
+        for (String key : followsGraph.keySet()) {
+            for (String value : followsGraph.get(key)) {
+                int currentMentions = influencersCounter.getOrDefault(value, 0);
+                influencersCounter.put(value, currentMentions + 1);
+            }
+        }
+
+        List<Map.Entry<String, Integer>> orderedList = new ArrayList<>();
+        orderedList.addAll(influencersCounter.entrySet());
+        Collections.sort(orderedList, new ValueComparator());
+
+        List<String> influencers = new LinkedList<>();
+        for (Iterator<Map.Entry<String, Integer>> it=orderedList.iterator(); it.hasNext();) {
+            influencers.add(it.next().getKey());
+        }
+
+        return influencers;
+    }
+
+    private static class ValueComparator implements Comparator<Map.Entry<String, Integer>> {
+
+        @Override
+        public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
+            return o2.getValue() - o1.getValue();
+        }
     }
 
     /* Copyright (c) 2007-2016 MIT 6.005 course staff, all rights reserved.
