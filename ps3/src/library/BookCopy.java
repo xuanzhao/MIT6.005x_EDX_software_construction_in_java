@@ -37,7 +37,7 @@ public class BookCopy {
      * @param book the Book of which this is a copy
      */
     public BookCopy(Book book) {
-        this.book = book;
+        this.book = new Book(book);
         this.condition = Condition.GOOD;
         checkRep();
     }

@@ -19,8 +19,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class MinesweeperServer {
 
     // System thread safety argument
-    //   TODO Problem 5
-
+    //   each client uses it's own socket do operation.
     /**
      * Default server port.
      */
@@ -53,8 +52,16 @@ public class MinesweeperServer {
 
     // TODO: Abstraction function, rep invariant, rep exposure
     // Abstraction function
-    //
+    //    Multiplayer Minesweeper server, the server's configuration should be fixed once it is setup.
+    //    every client play on same board.
     // rep invariant
+    //    the server socket and game board be fixed, after the server be setup.
+    //    every client connect to server with same connection configuration.
+    //    the server will open a new socket for every new client connection, and put the socket in a new thread for
+    //    handling thread safety under multi players context.
+    // rep exposure
+    //    server exposure mutator methods of board instance for change board status.
+    //    server instance do not provide any observer method, and also rep is private, no any mutator method.
 
     /**
      * Make a MinesweeperServerSingleThread that listens for connections on port.

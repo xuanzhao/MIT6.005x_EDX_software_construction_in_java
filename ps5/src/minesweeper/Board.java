@@ -13,20 +13,20 @@ import java.util.stream.Stream;
  * TODO: Specification
  */
 public class Board {
-    public static final char UNTOUCHED = '-';
-    public static final char FLAGGED = 'F';
-    public static final char TOUCHED = ' ';
-    public static final char MINE = 'B';
+    private static final char UNTOUCHED = '-';
+    private static final char FLAGGED = 'F';
+    private static final char TOUCHED = ' ';
+    private static final char MINE = 'B';
 
     private int boardXSize, boardYSize;
     private boolean[][] mines;
     private int[][] numbers;
-    public boolean[][] open;
-    public boolean[][] flags;
+    private boolean[][] open;
+    private boolean[][] flags;
 
     // TODO: Abstraction function, rep invariant, rep exposure, thread safety
     // Abstraction function
-    //    each cell could have or not have mine, each cell could have a rep show its nearby has how many number of mines or it is flagged.
+    //    each cell could have or not have mine,
     //    each cell's state could be flagged, undigged, filled with number, blank.
     //    when dig a cell without mine, open it, and open its nearby cells which is satisfied nearby no any mine.
     //    when a cell is flagged, could unflagged it.
@@ -36,7 +36,9 @@ public class Board {
     //     “ ” (space) for squares with state dug and 0 neighbors that have a bomb.
     //     integer COUNT in range [1-8] for squares with state dug and COUNT neighbors that have a bomb.
     // thread safety
-    //    use thread safety data structure
+    //    any mutator be used sync lock to protect thread safety.
+    // rep exposure
+    //    board provide two get methods as observer, but do not offer any mutator method.
 
     // TODO: Specify, test, and implement in problem 2
 
