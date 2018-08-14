@@ -59,6 +59,10 @@ public class MinesweeperServer {
     //    every client connect to server with same connection configuration.
     //    the server will open a new socket for every new client connection, and put the socket in a new thread for
     //    handling thread safety under multi players context.
+    // thread safety
+    //    its fields is immutable and private.
+    //    the server thread is main thread, client threads will have its own socket to server, the socket is confined.
+    //    all client threads will access same board instance, but the board mutator methods are added sync lock.
     // rep exposure
     //    server exposure mutator methods of board instance for change board status.
     //    server instance do not provide any observer method, and also rep is private, no any mutator method.
@@ -90,7 +94,7 @@ public class MinesweeperServer {
         try {
             while (true) {
                 Socket socket = serverSocket.accept();
-                // block until a client connects
+                // to avoid main thread block, handle each client I/O socket with a new thread.
                 executorService.submit(new ConnectionHandler(socket));
             }
         } finally {

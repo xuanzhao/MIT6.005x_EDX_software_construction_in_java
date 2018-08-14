@@ -36,7 +36,7 @@ public class Board {
     //     “ ” (space) for squares with state dug and 0 neighbors that have a bomb.
     //     integer COUNT in range [1-8] for squares with state dug and COUNT neighbors that have a bomb.
     // thread safety
-    //    any mutator be used sync lock to protect thread safety.
+    //    any mutator be used sync lock to insure thread safety.
     // rep exposure
     //    board provide two get methods as observer, but do not offer any mutator method.
 
@@ -203,7 +203,7 @@ public class Board {
         }
     }
 
-    public synchronized String showBoardState() {
+    public String showBoardState() {
         StringBuilder boardState = new StringBuilder(boardXSize * boardYSize);
         for (int i = 0; i < boardYSize; i++) {
             for (int j = 0; j < boardXSize; j++) {
