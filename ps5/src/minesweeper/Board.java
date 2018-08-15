@@ -36,7 +36,7 @@ public class Board {
     //     “ ” (space) for squares with state dug and 0 neighbors that have a bomb.
     //     integer COUNT in range [1-8] for squares with state dug and COUNT neighbors that have a bomb.
     // thread safety
-    //    any mutator be used sync lock to insure thread safety.
+    //    all access to Rep be used sync lock to insure thread safety. This is Monitor Pattern。
     // rep exposure
     //    board provide two get methods as observer, but do not offer any mutator method.
 
@@ -158,40 +158,46 @@ public class Board {
     }
 
     private void swap(int iX, int iY, int randX, int randY) {
-        boolean b = mines[iX][iY];
-        mines[iX][iY] = mines[randX][randY];
-        mines[randX][randY] = b;
+        synchronized (this) {
+            boolean b = mines[iX][iY];
+            mines[iX][iY] = mines[randX][randY];
+            mines[randX][randY] = b;
+        }
     }
 
-    public synchronized void open(int y, int x) {
-        if (!inArea(y, x)) {
-            throw new IllegalArgumentException("Out of index in open funcion!");
-        }
+    public void open(int y, int x) {
+        synchronized (this) {
+            if (!inArea(y, x)) {
+                throw new IllegalArgumentException("Out of index in open funcion!");
+            }
 
-        if (isMine(y, x)) {
-            throw new IllegalArgumentException("Cannot open an mine cell in open function!");
-        }
+            if (isMine(y, x)) {
+                throw new IllegalArgumentException("Cannot open an mine cell in open function!");
+            }
 
-        open[y][x] = true;
+            open[y][x] = true;
 
-        if (numbers[y][x] > 0) {
-            return;
-        }
+            if (numbers[y][x] > 0) {
+                return;
+            }
 
-        for (int i = y - 1; i < y + 1; i++) {
-            for (int j = x - 1; j < x + 1; j++) {
-                if (inArea(i, j) && !open[i][j] && !mines[i][j]) {
-                    open(i, j);
+            for (int i = y - 1; i < y + 1; i++) {
+                for (int j = x - 1; j < x + 1; j++) {
+                    if (inArea(i, j) && !open[i][j] && !mines[i][j]) {
+                        open(i, j);
+                    }
                 }
             }
         }
     }
 
     private boolean isMine(int y, int x) {
-        if (!inArea(y, x)) {
-            throw new IllegalArgumentException("Out of index in isMine function!");
+        synchronized (this) {
+            if (!inArea(y, x)) {
+                throw new IllegalArgumentException("Out of index in isMine function!");
+            }
+            return mines[y][x];
         }
-        return mines[y][x];
     }
 
     public void print() {
@@ -204,50 +210,58 @@ public class Board {
     }
 
     public String showBoardState() {
-        StringBuilder boardState = new StringBuilder(boardXSize * boardYSize);
-        for (int i = 0; i < boardYSize; i++) {
-            for (int j = 0; j < boardXSize; j++) {
-                if (flags[i][j]) {
-                    boardState.append(FLAGGED);
-                } else if (open[i][j] && mines[i][j]) {
-                    boardState.append(MINE);
-                } else if (open[i][j] && numbers[i][j] == 0) {
-                    boardState.append(TOUCHED);
-                } else if (open[i][j] && numbers[i][j] > 0) {
-                    boardState.append(String.valueOf(numbers[i][j]));
+        synchronized (this) {
+            StringBuilder boardState = new StringBuilder(boardXSize * boardYSize);
+            for (int i = 0; i < boardYSize; i++) {
+                for (int j = 0; j < boardXSize; j++) {
+                    if (flags[i][j]) {
+                        boardState.append(FLAGGED);
+                    } else if (open[i][j] && mines[i][j]) {
+                        boardState.append(MINE);
+                    } else if (open[i][j] && numbers[i][j] == 0) {
+                        boardState.append(TOUCHED);
+                    } else if (open[i][j] && numbers[i][j] > 0) {
+                        boardState.append(String.valueOf(numbers[i][j]));
+                    } else {
+                        boardState.append(UNTOUCHED);
+                    }
+                }
+                boardState.append('\n');
+            }
+            return boardState.toString();
+        }
+    }
+
+    public void flag(int y, int x) {
+        synchronized (this) {
+            if (inArea(y, x)) {
+                flags[y][x] = true;
+            }
+        }
+    }
+
+
+    public void deflag(int y, int x) {
+        synchronized (this) {
+            if (inArea(y, x)) {
+                flags[y][x] = false;
+            }
+        }
+    }
+
+    public boolean dig(int y, int x) {
+        synchronized (this) {
+            if (inArea(y, x)) {
+                if (isMine(y, x)) {
+                    System.out.println("Game over");
+                    open[y][x] = true;
+                    return true;
                 } else {
-                    boardState.append(UNTOUCHED);
+                    open(y, x);
                 }
             }
-            boardState.append('\n');
+            return false;
         }
-        return boardState.toString();
-    }
-
-    public synchronized void flag(int y, int x) {
-        if (inArea(y, x)) {
-            flags[y][x] = true;
-        }
-    }
-
-
-    public synchronized void deflag(int y, int x) {
-        if (inArea(y, x)) {
-            flags[y][x] = false;
-        }
-    }
-
-    public synchronized boolean dig(int y, int x) {
-        if (inArea(y, x)) {
-            if (isMine(y, x)) {
-                System.out.println("Game over");
-                open[y][x] = true;
-                return true;
-            } else {
-                open(y, x);
-            }
-        }
-        return false;
     }
 
     public int getBoardXSize() {
